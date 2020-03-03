@@ -1,0 +1,95 @@
+#loginBody{
+    background-image: url(../img/gymBanner.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+form{
+    margin:auto;
+    margin-top: 50%;
+    background-color: #FBA919;
+    padding: 50px;
+    width: 60vh;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.9);
+}
+
+form>input,select{
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 3px;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+::placeholder{
+    color: gray;
+}
+form>input:focus{
+    border: 2px solid #FBA919;
+}
+input{
+   width: 30%; 
+}
+
+#btnIngresar{
+    background-color: white;
+    color: gray;
+    width: 40vh;
+    border:1px solid #FBA919;
+    height: 10vh;
+}
+#btnIngresar:hover{
+    background-color:chartreuse;
+    color: white;
+    border:1px solid white;
+}
+#btnRutinas{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.2s;
+    width: 22.2%;
+    border:0;
+}
+#btnRutinas:hover{
+    background-color: goldenrod;
+    color: white;
+    text-decoration: underline;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media(min-width:480px) {
+    form{
+        margin-top: 100%;
+    }
+}
+@media(min-width:1024px) {
+     form{
+        margin-top: 50%;
+    }
+}
+table{
+    width: 100vh;
+    text-align: center;
+    border: 3px solid #FBA919;
+    margin: auto;
+    transform: translateY(800%);
+    background-color: white;
+    color: black;
+    margin-bottom: 40px;
+    display: none;
+}
+th,td{
+    border-style:ridge;
+    border: 0;
+    border-right:2px solid #FBA919;
+    border-top:2px solid #FBA919;
+    width: 10%;
+    height: 5vh;
+}

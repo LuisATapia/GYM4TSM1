@@ -1,0 +1,35 @@
+#loginBody{
+    background-image: url(../img/gymBanner.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+article{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    transform: translateY(100%);
+}
+article > h1{
+    font-size: 75px;
+}
+article > h2{
+    font-size: 50px;
+}
+article > h3{
+    font-size: 40px;
+}
+article > a{
+    color: white;
+    background-color: #FBA919;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+article > a:hover{
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid white;
+}

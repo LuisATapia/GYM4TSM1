@@ -1,0 +1,60 @@
+#loginBody{
+    background-image: url(../img/fondoRegistro.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+textarea{
+    display:flex;
+    margin: auto;
+    resize: vertical;
+    max-height: 100px;
+    min-height: 100px;
+    width: 100%;
+    margin-top: 0%;
+    border-radius: 10px;
+    border: 0;
+}
+.info__columna {
+  background: #F106F;
+  color: #fff;
+  padding: 15px;
+    margin: auto;
+    margin-top: 25%;
+  margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#btn{
+    margin:auto;
+    font-size: 30px;
+    border: 0;
+    color: #FBA919;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border:3px solid #FBA919;
+    transition: all 0.2s;
+    float: right;
+}
+#btn:hover{
+    background-color: #FBA919;
+    color: white;
+}
+form{
+    margin: auto;
+    padding: 10px;
+    transform: translateY(40%);
+    border:10px solid #FBA919;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 20px;
+    width: 150vh;
+}
+input{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border:0;
+    
+}

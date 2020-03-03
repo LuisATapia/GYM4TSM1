@@ -1,0 +1,81 @@
+#loginBody{
+    background-image: url(../img/fondoRegistro.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+textarea{
+    display:flex;
+    margin: auto;
+    resize: vertical;
+    max-height: 100px;
+    min-height: 100px;
+    width: 100%;
+    
+    border-radius: 10px;
+    border: 0;
+}
+.info__columna {
+  background: #F106F;
+  color: #fff;
+  padding: 15px;
+    margin: auto;
+    margin-top: 20%;
+  margin-bottom: 30px;
+    border-radius: 10px;
+}
+.cursos__columna {
+  position: relative;
+  margin-bottom: 30px;
+}
+.cursos__descripcion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  width: 60%;
+  height: 100%;
+  padding: 5px;
+}
+.cursos__titulo {
+  font-size: 25px;
+  margin: 5px 0;
+}
+.cursos__img {
+  width: 100%;
+}
+#btn{
+    margin:auto;
+    font-size: 30px;
+    border: 0;
+    color: #FBA919;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border:3px solid #FBA919;
+    transition: all 0.2s;
+    float: right;
+}
+#btn:hover{
+    background-color: #FBA919;
+    color: white;
+}
+form,table{
+    padding: 10px;
+    margin-top: 20%;;
+    border:10px solid #FBA919;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 20px;
+}
+th,td{
+    border-style:double;
+}
+input{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border:0;
+    
+}

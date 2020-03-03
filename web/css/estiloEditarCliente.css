@@ -1,0 +1,58 @@
+#loginBody{
+    background-image: url(fondoRegistro.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+form{
+    margin: auto;
+    margin-top: 40%;
+    margin-bottom: 3%;
+    padding: 20px;
+    background-color:rgba(0,0,0,0.5);
+    font-size: 22px;
+    width: 55vh;
+    border: 2px solid #FBA919;;
+    border-radius: 12px;
+}
+
+input, textarea{
+    border: 0;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 8px;;
+}
+textarea{
+    resize: vertical;
+    max-height: 160px;
+    min-height: 50px;
+}
+#btnRegistrar{
+    border: 0;
+    width: 25vh;
+    background-color: #FBA919;
+    color: white;
+    transition: all 0.5s;
+    height: 7vh;
+}
+#btnRegistrar:hover{
+    background-color: white;
+    color: #FBA919;
+}
+p>a{
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+@media(min-width:480px) {
+    form{
+        margin-top: 180%;
+    }
+}
+@media(min-width:1024px) {
+     form{
+        margin-top: 65%;
+    }
+}
+

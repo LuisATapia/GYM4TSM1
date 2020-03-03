@@ -1,0 +1,54 @@
+#loginBody{
+    background-image: url(../img/gymBanner.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+form{
+    margin:auto;
+    margin-top: 50%;
+    background-color: #FBA919;
+    padding: 50px;
+    width: 60vh;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.9);
+}
+
+form>input,select{
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 3px;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+::placeholder{
+    color: gray;
+}
+form>input:focus{
+    border: 2px solid #FBA919;
+}
+
+#btnIngresar{
+    background-color: white;
+    color: gray;
+    width: 40vh;
+    border:1px solid #FBA919;
+    height: 10vh;
+}
+#btnIngresar:hover{
+    background-color: dimgray;
+    color: white;
+    border:1px solid white;
+}
+
+@media(min-width:480px) {
+    form{
+        margin-top: 100%;
+    }
+}
+@media(min-width:1024px) {
+     form{
+        margin-top: 50%;
+    }
+}
