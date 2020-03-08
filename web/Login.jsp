@@ -22,11 +22,9 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="/" class="menu__link">Inicio</a></li>
-            <li class="menu__item"><a href="cursos.html" class="menu__link">Cursos</a></li>
-            <li class="menu__item"><a href="docentes.html" class="menu__link">Docentes</a></li>
-            <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
-            <li class="menu__item"><a href="contacto.html" class="menu__link select">Inicia Sesi&oacute;n</a></li>
+            <li class="menu__item"><a href="index.jsp" class="menu__link select">Inicio</a></li>
+              <li class="menu__item"><a href="Registrar.jsp" class="menu__link">Registrate</a></li>
+              <li class="menu__item"><a href="Login.jsp" class="menu__link">Inicia Sesi&oacute;n</a></li>
           </ul>
         </nav>
       </div>
@@ -39,7 +37,7 @@
           <input type="text" placeholder="Usuario" name="txtUsuarioLogin"><br>
           <input type="password" placeholder="Contraseña" name="txtPassLogin"><br>
           <input type="submit" value="Ingresar" id="btnIngresar">
-          <p><a href="Registrar.jsp">Registrate aqu&iacute;</a></p>
+              <p><a href="Registrar.jsp">Registrate aqu&iacute;</a></p>
       </form>
       </div>
     </div>

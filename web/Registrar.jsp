@@ -6,7 +6,7 @@
    <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosRegistro.css">
-    <title>Pagina</title>
+    <title>Registrate</title>
     </head>
     <body id="loginBody">
     <header class="header">
@@ -15,11 +15,9 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="/" class="menu__link">Inicio</a></li>
-            <li class="menu__item"><a href="cursos.html" class="menu__link">Cursos</a></li>
-            <li class="menu__item"><a href="docentes.html" class="menu__link">Docentes</a></li>
-            <li class="menu__item"><a href="contacto.html" class="menu__link select">Registrate</a></li>
-            <li class="menu__item"><a href="contacto.html" class="menu__link">Inicia Sesi&oacute;n</a></li>
+            <li class="menu__item"><a href="index.jsp" class="menu__link select">Inicio</a></li>
+              <li class="menu__item"><a href="Registrar.jsp" class="menu__link">Registrate</a></li>
+              <li class="menu__item"><a href="Login.jsp" class="menu__link">Inicia Sesi&oacute;n</a></li>
           </ul>
         </nav>
       </div>
@@ -40,7 +38,7 @@
           <input type="checkbox" name="chec" id="chec" onchange="Cambiar();">
           <input type="text" placeholder="Palabra clave" id="btn" readonly name="txtClave">
           <input type="submit" value="Registrar" id="btnRegistrar">
-          <p><a href="login.jsp">Inicia sesi&oacute;n aqu&iacute;</a></p>
+              <p><a href="Login.jsp">Inicia sesi&oacute;n aqu&iacute;</a></p>
       </form>
       </div>
     </div>

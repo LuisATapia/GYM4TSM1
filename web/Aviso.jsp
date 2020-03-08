@@ -44,7 +44,7 @@
                 <h1>Su pago ha expirado!</h1>
                 <h2>Porfavor, acuda al gimnasio a realizarlo.</h2>
                 <h3>:(</h3>
-                <a href="login.jsp">Volver !</a>
+                <a href="Login.jsp">Volver !</a>
             </article> 
       </div>
     </div>
