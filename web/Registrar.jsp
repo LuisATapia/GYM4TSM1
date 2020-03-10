@@ -1,3 +1,4 @@
+<%@page import="conexiones.Validaciones"%>
 <%@page import="conexiones.Personas"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -29,15 +30,24 @@
           <h1>Registrate</h1>
           <input type="text" placeholder="Nombre" name="txtNombre"><br>
           <input type="text" placeholder="Apellidos" name="txtApellidos"><br>
-          <input type="text" placeholder="CURP" name="txtCurp"><br>
-          <input type="text" placeholder="Experiencia" name="txtExpe"><br>         
+          <input type="text" placeholder="Correo" name="txtCurp"><br>
+          <!--<input type="text" placeholder="Experiencia" name="txtExpe">-->
+          <p>Experiencia:</p>
+          <select name="txtExpe">
+                  <option>No tengo experiencia</option>
+                  <option>1 mes</option>
+                  <option>3 meses</option>
+                  <option>6 meses</option>
+                  <option>1 año</option>
+                  <option>Más de un año</option>
+              </select><br>         
           <textarea placeholder="Observaciones" name="txtObser"></textarea><br>
           <input type="password" placeholder="Contraseña"><br>
           <input type="password" placeholder="Confirmar contraseña" name="txtPass"><br>
           <label for="chec">Entrenador:</label>
           <input type="checkbox" name="chec" id="chec" onchange="Cambiar();">
           <input type="text" placeholder="Palabra clave" id="btn" readonly name="txtClave">
-          <input type="submit" value="Registrar" id="btnRegistrar">
+          <input type="submit" value="Registrar" id="btnRegistrar" name="btnReg">
               <p><a href="Login.jsp">Inicia sesi&oacute;n aqu&iacute;</a></p>
       </form>
       </div>
@@ -45,7 +55,13 @@
     <script src="js/script.js"></script>
   </body>
     <%
-            String nombre=request.getParameter("txtNombre");
+        Validaciones v= new Validaciones();
+        if (request.getParameter("btnReg")!=null)
+        {
+            if (v.validarNombre(request.getParameter("txtNombre"))==true)
+            {
+            %><script>alert('Ya la hicistes!');</script><%
+       /* String nombre=request.getParameter("txtNombre");
             String apellidos=request.getParameter("txtApellidos");
             String curp=request.getParameter("txtCurp");
             String exp=request.getParameter("txtExpe");
@@ -62,8 +78,11 @@
             person.setPalabra_clave(clave);
             person.setPasswd(pass);
             person.registrarPersona();
-            
-            //persona.registrarPersona();
+         */   
+            }else if(v.validarNombre(request.getParameter("txtNombre"))==false){
+        %><script>alert('Ya valiste madre!');</script><%
+}
+        }
             
             %>
 </html>
