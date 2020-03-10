@@ -61,6 +61,13 @@
             if (v.validarNombre(request.getParameter("txtNombre"))==true)
             {
             %><script>alert('Ya la hicistes!');</script><%
+                if(v.validarApellidos(request.getParameter("txtApellidos"))==true){
+                    %><script>alert('Ya la hicistes 2!');</script><%
+                        if(v.validarCorreo(request.getParameter("txtCurp"))==true){
+                            %><script>alert('Ya la hicistes 3!');</script><%
+                                if(v.validarContraseña(request.getParameter("txtPass"))==true){
+                                    %><script>alert('Ya la hicistes 4!');</script><%
+                                
        /* String nombre=request.getParameter("txtNombre");
             String apellidos=request.getParameter("txtApellidos");
             String curp=request.getParameter("txtCurp");
@@ -78,7 +85,11 @@
             person.setPalabra_clave(clave);
             person.setPasswd(pass);
             person.registrarPersona();
+                            
          */   
+                            }
+                        }
+                    }
             }else if(v.validarNombre(request.getParameter("txtNombre"))==false){
         %><script>alert('Ya valiste madre!');</script><%
 }
