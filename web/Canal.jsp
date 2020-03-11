@@ -28,7 +28,6 @@
     //people.getId_persona();
     String id=people.getId_persona();
     request.getSession().setAttribute("id_persona", people.getId_persona());
-    
     Inscripciones i = new Inscripciones();
     i.setId_cliente(id);
     i.extraerFechas();

@@ -15,8 +15,8 @@ public class Conexion {
         //passwd="s1ul1992";
         //url="jdbc:postgresql://localhost:5432/GYM";
         //cOMPU roger
-        passwd="123456";
-        url="jdbc:postgresql://localhost:5432/GYM";
+        passwd="123";
+        url="jdbc:postgresql://localhost:5432/gym";
         //LABORATORIO
         //passwd="BD";
         //url="jdbc:postgresql://localhost:5432/GYM";

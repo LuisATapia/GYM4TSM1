@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
         <file>
             <url>web/EntrenadorRutinas.jsp</url>
             <bookmark id="1">
                 <name/>
-                <line>75</line>
+                <line>74</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/java/conexiones/Validaciones.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>19</line>
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/ModificarSocio.jsp</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/css/estilos.css</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/SocioRutinas.jsp</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/EntrenadorRutinas.jsp</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/css/estilosRegistro.css</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/Registrar.jsp</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/src/java/conexiones/Validaciones.java</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/Login.jsp</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/css/estiloIngresarDieta.css</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/menuEntrenador.jsp</file>
+            <file>file:/C:/Users/ROGELIO/Documents/GYM4TSM1/web/Canal.jsp</file>
+        </group>
     </open-files>
 </project-private>

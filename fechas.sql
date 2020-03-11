@@ -24,6 +24,7 @@ SELECT fecha_termino - (SELECT current_date) FROM inscripciones ins
 INNER JOIN pagos pa ON pa.id_pago=ins.id_pago WHERE id_cliente=10 ORDER BY pa.id_pago DESC LIMIT 1
 
 
+
 SELECT * FROM progresos
 	(SELECT CASE WHEN MAX(id_progreso WHERE id_persona=cliente) IS NULL THEN '1'
 	ELSE MAX(id_progreso)+1 END FROM progresos)

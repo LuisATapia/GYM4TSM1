@@ -18,34 +18,40 @@
     </head>
     <body>
         <%
-        HttpSession validar= request.getSession();
-        String id_persona=validar.getAttribute("id_persona").toString();
-        Progresos p= new Progresos();
-        p.setId_cliente(id_persona);
+            HttpSession validar=request.getSession();
+            String id_persona=validar.getAttribute("id_persona").toString();
+            Progresos p = new Progresos();
+            String clienteid=String.valueOf(validar.getAttribute("id_persona"));
+            p.setId_cliente(clienteid);
         //p.obtenerProgresos();
         %>
         <div class="contenedor">
             <h1><%=id_persona%></h1>
             
-          <table id="tablaProgreso">
-              <tr>
-                  <th>Fecha:</th>
-                  <th>Peso:</th>
-                  <th>Estatura:</th>
-              </tr>
-              <%
-                  for(Progresos a :p.obtenerProgresos()){
-                      System.out.println(a.getFecha_captura()+a.getPeso()+a.getAltura());
-                  %>
-              <tr>
-                  <td><%=a.getFecha_captura()%></td>
-                  <td><%=a.getPeso()%></td>
-                  <td><%=a.getAltura()%></td>
-              </tr>
-                  <%
-                      }
-                    %>
-          </table>
+          <table>
+            <tr>
+                <th colspan="6">SOCIOS</th>
+            </tr>
+             <tr>
+                 <td>Fecha</td>
+                 <td>Peso</td>
+                 <td>Altura</td>
+             </tr>
+             <%
+                 //Personas p = Personas new
+                 for (Progresos datos : p.obtenerProgresos())
+                 {
+                     System.out.println(datos.getFecha_captura()+datos.getPeso()+datos.getAltura());
+             %>
+             <tr>
+                 <td><%=datos.getFecha_captura()%></td>
+                 <td><%=datos.getPeso()%></td>
+                 <td><%=datos.getAltura()%></td>
+             </tr>
+             <%
+                 }
+             %>
+         </table>
       </div>
     </body>
 </html>

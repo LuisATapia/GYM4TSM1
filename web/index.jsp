@@ -11,18 +11,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
-    <title>Pagina</title>
+   <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
+    <title>Inicio</title>
     </head>
     <body>
     <header class="header">
       <div class="contenedor">
-          <h1 class="logo"><span class="icon-gym">GYM</span></h1>
+        <h1 class="logo"><span class="icon-gym">GYM</span></h1>
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="#" class="menu__link select">Inicio</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Registrate</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Inicia Sesi&oacute;n</a></li>
+            <li class="menu__item"><a href="index.jsp" class="menu__link select">Inicio</a></li>
+              <li class="menu__item"><a href="Registrar.jsp" class="menu__link">Registrate</a></li>
+              <li class="menu__item"><a href="Login.jsp" class="menu__link">Inicia Sesi&oacute;n</a></li>
           </ul>
         </nav>
       </div>
@@ -99,5 +100,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>swal ("Bienvenido","    ","success",{buttons: false, timer: 3000,});</script>
   </body>
 </html>

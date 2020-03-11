@@ -12,6 +12,7 @@
         <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosMenuEntrenador.css">
+   <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
     <title>Menu Principal</title>
     </head>
     <body id="loginBody">
@@ -25,7 +26,7 @@
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Cerrar Sesi&oacute;n</a></li>
+            <li class="menu__item"><a href="#" class="menu__link select" onclick="cerrarVentana();">Cerrar Sesi&oacute;n</a></li>
           </ul>
         </nav>
       </div>
@@ -42,5 +43,12 @@
       </div>
     </div>
     <script src="js/script.js"></script>
+    
+    <script>
+        function cerrarVentana(){
+            window.open('Login.jsp');
+        window.close();
+    }
+    </script>
     </body>
 </html>
