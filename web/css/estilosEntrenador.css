@@ -79,3 +79,10 @@ input{
     border:0;
     
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: #FBA919;
+}

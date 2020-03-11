@@ -34,7 +34,7 @@
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Cerrar Sesi&oacute;n</a></li>
+            <li class="menu__item"><a href="#" class="menu__link select" onclick="cerrarVentana();">Cerrar Sesi&oacute;n</a></li>
           </ul>
         </nav>
       </div>
