@@ -9,12 +9,9 @@
    <link rel="stylesheet" href="css/estilos.css">
        <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilosRegistro.css">
-<<<<<<< HEAD
     <title>Pagina</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-=======
     <title>Registrate</title>
->>>>>>> 9bcdfecc70c1a2f3958fde53f188041ed0540c82
     </head>
     <body id="loginBody">
     <header class="header">
@@ -54,14 +51,11 @@
           <label for="chec">Entrenador:</label>
           <input type="checkbox" name="chec" id="chec" onchange="Cambiar();">
           <input type="text" placeholder="Palabra clave" id="btn" readonly name="txtClave">
-<<<<<<< HEAD
-              <div class="g-recaptcha" data-sitekey="6LdHbt8UAAAAAO_Af3tGPQbzRDszpSdKDATAIeG_"></div>
+          <div class="g-recaptcha" data-sitekey="6LdHbt8UAAAAAO_Af3tGPQbzRDszpSdKDATAIeG_"></div>
           <input type="submit" value="Registrar" id="btnRegistrar">
           <p><a href="login.jsp">Inicia sesi&oacute;n aqu&iacute;</a></p>
-=======
           <input type="submit" value="Registrar" id="btnRegistrar" name="btnReg">
               <p><a href="Login.jsp">Inicia sesi&oacute;n aqu&iacute;</a></p>
->>>>>>> 9bcdfecc70c1a2f3958fde53f188041ed0540c82
       </form>
       </div>
     </div>
