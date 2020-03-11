@@ -23,6 +23,7 @@ form>input{
     font-size: 22px;
     border-radius: 5px;
     transition: all 0.3s;
+    text-transform: uppercase; /*transforma mayusculas Validacion Ana*/
 }
 ::placeholder{
     color: gray;

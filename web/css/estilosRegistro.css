@@ -22,11 +22,16 @@ input, textarea, select{
     margin: 10px;
     font-size: 18px;
     border-radius: 8px;;
+    text-transform: uppercase; /*transforma mayusculas Validacion Ana*/
+
+    
+    
 }
 textarea{
     resize: vertical;
     max-height: 150px;
     min-height: 50px;
+    text-transform: uppercase;
 }
 #btnRegistrar{
     border: 0;
