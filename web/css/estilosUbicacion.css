@@ -1,0 +1,25 @@
+#loginBody{
+    background-image: url(../img/gymBanner.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+#mapa{
+    margin: auto;
+    transform: translateY(70%);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    font-size: 40px;
+    border:2px solid white;
+}
+.banner > h1{
+    margin: auto;
+    text-align: center;
+    transform: translateY(160%);
+    color: white;
+    width: 40vh;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 50px;
+    border-radius: 10px;
+    padding: 5px;
+}
