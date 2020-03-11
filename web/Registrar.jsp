@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosRegistro.css">
     <title>Pagina</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body id="loginBody">
     <header class="header">
@@ -39,6 +40,7 @@
           <label for="chec">Entrenador:</label>
           <input type="checkbox" name="chec" id="chec" onchange="Cambiar();">
           <input type="text" placeholder="Palabra clave" id="btn" readonly name="txtClave">
+              <div class="g-recaptcha" data-sitekey="6LdHbt8UAAAAAO_Af3tGPQbzRDszpSdKDATAIeG_"></div>
           <input type="submit" value="Registrar" id="btnRegistrar">
           <p><a href="login.jsp">Inicia sesi&oacute;n aqu&iacute;</a></p>
       </form>
