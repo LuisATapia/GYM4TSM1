@@ -13,6 +13,7 @@
    <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosPago.css">
+       <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
     <title>Registrar Pagos</title>
     </head>
     <body id="loginBody">

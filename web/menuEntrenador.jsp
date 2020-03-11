@@ -12,6 +12,7 @@
         <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosMenuEntrenador.css">
+   <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
     <title>Menu Principal</title>
     </head>
     <body id="loginBody">

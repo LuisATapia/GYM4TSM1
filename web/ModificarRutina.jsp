@@ -12,6 +12,7 @@
    <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosEditarRutinas.css">
+       <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
     <title>Pagina</title>
     </head>
     <body id="loginBody">

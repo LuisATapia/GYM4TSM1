@@ -7,6 +7,7 @@
    <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosProgreso.css">
+       <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
     <title>Registrar Progreso</title>
     </head>
     <body id="loginBody">
@@ -26,7 +27,7 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="ModificarPersona.jsp" class="menu__link">Mi perfil</a></li>        
+            <li class="menu__item"><a href="ModificarSocio.jsp.jsp" class="menu__link">Mi perfil</a></li>        
             <li class="menu__item"><a href="SocioRutinas.jsp" class="menu__link select">Ver Rutinas</a></li>
             <li class="menu__item"><a href="RegistrarProgreso.jsp" class="menu__link">Mi Progreso</a></li>
           </ul>

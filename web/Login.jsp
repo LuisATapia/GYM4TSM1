@@ -11,14 +11,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet"> 
+       <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosLogin.css">
+       <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
     <title>Iniciar Sesión</title>
     </head>
     <body id="loginBody">
     <header class="header">
       <div class="contenedor">
-        <h1 class="logo">GYM</h1>
+        <h1 class="logo"><span class="icon-gym">GYM</span></h1>
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">

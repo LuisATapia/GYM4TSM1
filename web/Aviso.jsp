@@ -12,6 +12,7 @@
            <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosAviso.css">
+   <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
         <title>JSP Page</title>
     </head>
     
@@ -31,8 +32,8 @@
         <nav class="nav" id="nav">
           <ul class="menu">
             <li class="menu__item"><a href="index.jsp" class="menu__link select">Inicio</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Registrate</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Inicia Sesi&oacute;n</a></li>
+              <li class="menu__item"><a href="Registrar.jsp" class="menu__link">Registrate</a></li>
+              <li class="menu__item"><a href="Login.jsp" class="menu__link">Inicia Sesi&oacute;n</a></li>
           </ul>
         </nav>
       </div>
@@ -41,10 +42,9 @@
      <!--<img src="gymBanner.jpg"alt="">-->
       <div class="contenedor">
                     <article>
-                <h1>Su pago ha expirado!</h1>
-                <h2>Porfavor, acuda al gimnasio a realizarlo.</h2>
-                <h2>Con el siguiente Folio:<%=validar.getAttribute("id_persona")%></h2>
-                <h3>:(</h3>
+                <h1>Su pago ha expirado! :(</h1>
+                <h2>Por favor, acuda al gimnasio a realizarlo.</h2>
+                <h2>Con el siguiente Folio: <%=validar.getAttribute("id_persona")%></h2>
                 <a href="Login.jsp">Volver !</a>
             </article> 
       </div>

@@ -12,6 +12,7 @@
         <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosMenuEntrenador.css">
+   <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
     <title>Menu Principal</title>
     </head>
     <body id="loginBody">
@@ -43,7 +44,7 @@
       <div class="contenedor">
       <section class="menu2">      
           <h1>Men&uacute;</h1>
-          <a href="ModificarPersona.jsp">Mi perfil</a>
+          <a href="ModificarSocio.jsp">Mi perfil</a>
           <a href="SocioRutinas.jsp">Ver Rutinas</a>
           <a href="RegistrarProgreso.jsp">Ver Progresos</a>
       </section>
