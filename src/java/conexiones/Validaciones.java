@@ -1,6 +1,6 @@
 package conexiones;
-
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 public class Validaciones {
     
     public boolean validarNombre (String nombre)
@@ -17,6 +17,12 @@ public class Validaciones {
         return rstnombre;
     }
     
+    public void letrasM(String algo){
+     
+        System.out.println(algo.toUpperCase());
+        
+    }
+    
     
     public boolean validarApellidos (String apellidos){
         boolean rstApellidos;
@@ -29,16 +35,7 @@ public class Validaciones {
         return rstApellidos; 
    }
 
-    public boolean validarCorreo (String correo){
-        boolean rstcorreo;
-        if(correo.isEmpty() || correo.length()<5 || correo.length()>40){
-            rstcorreo=false;
-        }else{
-                rstcorreo=true;
-                }
-        System.out.println(rstcorreo);
-        return rstcorreo; 
-   }
+    
     public boolean validarContraseña (String correo){
         boolean rstcontra;
         if(correo.isEmpty() || correo.length()<8 || correo.length()>12){
@@ -51,12 +48,47 @@ public class Validaciones {
    }
     
     
+    
+    public boolean validarEmail(String email) {
+        boolean co;
+        Pattern pattern = Pattern
+                .compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+                        + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+
+        // El email a validar
+
+        Matcher mather = pattern.matcher(email);
+
+        if (mather.find() == true) {
+            System.out.println("El email ingresado es válido.");
+            co=true;
+        } else {
+            System.out.println("El email ingresado es inválido.");
+            co=false;
+        }
+    
+        return co;
+   
+    }
+    
+    public void soloL(String letras){
+Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
+     Matcher mat = pat.matcher(letras);
+     if (mat.matches()) {
+         System.out.println("SI");
+     } else {
+         System.out.println("NO");
+     }
+    }
+    
     public static void main (String [] args)
     {
         Validaciones v = new Validaciones();
         v.validarNombre("Rogelio");
         v.validarApellidos("Diaz Moreno");
-        v.validarCorreo("1kv.diaz.moreno.rogelio@gmail.com");
+        v.validarEmail("1kv.diaz.moreno.rogelio@hotmail.com");
         v.validarContraseña("Rogelio3011");
+        v.letrasM("rogelio");
+        v.soloL("rogelio10");
     }
 }

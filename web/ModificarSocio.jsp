@@ -1,7 +1,7 @@
 <%-- 
-    Document   : ModificarPersona
-    Created on : 3/02/2020, 04:15:35 AM
-    Author     : LuisAngel
+    Document   : ModificarSocio
+    Created on : 10/03/2020, 10:42:48 AM
+    Author     : ROGELIO
 --%>
 
 <%@page import="conexiones.Personas"%>
@@ -24,8 +24,7 @@
         p.mostrarInformacion();
         //System.out.println(p.getNombre()+p.getApellidos()+p.getObservaciones());
         %>
-        <!--<h1>Folio: <%=id_people%></h1>
-        <h1>Nombre: <%=p.getNombre()%></h1>-->
+       
     <header class="header">
       <div class="contenedor">
         <h1 class="logo">GYM</h1>
@@ -47,9 +46,9 @@
           <input type="text" placeholder="Modificar nombre" name="txtNuevoNombre" value="<%=p.getNombre()%>"><br>
           <input type="text" placeholder="Modificar apellidos" name="txtNuevoApellido" value="<%=p.getApellidos()%>"><br>      
           <textarea placeholder="Modificar observaciones" name="txtNuevaObser" value=""><%=p.getObservaciones()%></textarea><br>
-          <input type="password" placeholder="Nueva Contraseña" value="<%=p.getPasswd()%>"><br>
-          <input type="password" placeholder="Confirmar Nueva contraseña" name="txtNuevaPass" value="<%=p.getPasswd()%>"><br>
-          <input type="submit" value="Guardar cambios" id="btnRegistrar" name="ModificarPersona" >
+              <input type="password" placeholder="Nueva Contraseña" value="<%=p.getPasswd()%>" ><br>
+          <input type="password" placeholder="Confirmar Nueva contraseña" value="<%=p.getPasswd()%>" name="txtNuevaPass"><br>
+          <input type="submit" value="Guardar cambios" id="btnRegistrar" name="ModificarPersona">
       </form>
           <%
               if(request.getParameter("ModificarPersona")!=null){
@@ -64,7 +63,7 @@
                 p.setPasswd(nuevaPass);
                 p.setId_persona(id_people);
                 p.modificarPersona();
-                response.sendRedirect("ModificarPersona.jsp");
+                response.sendRedirect("ModificarSocio.jsp");
               }
           %>
       </div>
@@ -72,3 +71,4 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+

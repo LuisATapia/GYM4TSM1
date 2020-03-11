@@ -43,6 +43,7 @@
                     <article>
                 <h1>Su pago ha expirado!</h1>
                 <h2>Porfavor, acuda al gimnasio a realizarlo.</h2>
+                <h2>Con el siguiente Folio:<%=validar.getAttribute("id_persona")%></h2>
                 <h3>:(</h3>
                 <a href="Login.jsp">Volver !</a>
             </article> 

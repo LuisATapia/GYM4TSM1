@@ -126,7 +126,7 @@ public class Personas {
      {
          try{
             con=new Conexion();
-            final String SQL="SELECT nombre,apellidos,observaciones FROM personas WHERE id_persona=?";
+            final String SQL="SELECT nombre,apellidos,observaciones,passwd FROM personas WHERE id_persona=?";
             PreparedStatement  sentencia= con.obtenerConexion().prepareStatement(SQL);
             sentencia.setInt(1,Integer.parseInt(id_persona));
             ResultSet record=sentencia.executeQuery();
@@ -135,6 +135,7 @@ public class Personas {
                 nombre=record.getString("nombre");
                 apellidos=record.getString("apellidos");
                 observaciones=record.getString("observaciones");
+                passwd=record.getString("passwd");
                 setNombre(nombre);
             }
         }catch(Exception e)
