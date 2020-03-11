@@ -19,7 +19,7 @@
         <%
         HttpSession validar=request.getSession();
         validar.getAttribute("id_persona");
-        if (validar.getAttribute("id_persona")==null)
+        if (validar.getAttribute("id_persona")==null || validar.getAttribute("id_persona").equals("0"))
         {
             response.sendRedirect("Login.jsp");
         }

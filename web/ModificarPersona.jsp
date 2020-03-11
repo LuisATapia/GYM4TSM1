@@ -23,11 +23,13 @@
         Personas p=new Personas();
         String id_people = validar.getAttribute("id_persona").toString();
         p.setId_persona(id_people);
-        p.mostrarInformacion();
-        //System.out.println(p.getNombre()+p.getApellidos()+p.getObservaciones());
+        p.mostrarInformacion(); 
+        if (validar.getAttribute("id_persona")==null || validar.getAttribute("id_persona").equals("0"))
+        {
+            response.sendRedirect("Login.jsp");
+        }
         %>
-        <!--<h1>Folio: <%=id_people%></h1>
-        <h1>Nombre: <%=p.getNombre()%></h1>-->
+        
     <header class="header">
       <div class="contenedor">
         <h1 class="logo"><span class="icon-gym">GYM</span></h1>

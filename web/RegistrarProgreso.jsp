@@ -13,6 +13,10 @@
     <body id="loginBody">
         <%
             HttpSession validar=request.getSession();
+        if (validar.getAttribute("id_persona")==null || validar.getAttribute("id_persona").equals("0"))
+        {
+            response.sendRedirect("Login.jsp");
+        }
             String id_persona=validar.getAttribute("id_persona").toString();
             Progresos pos = new Progresos();
             String clienteid=String.valueOf(validar.getAttribute("id_persona"));

@@ -1,7 +1,7 @@
 <%-- 
     Document   : TablaProgreso
     Created on : 21/02/2020, 02:52:13 PM
-    Author     : erik_
+    Author     : Liliana
 --%>
 
 <%@page import="conexiones.Rutina"%>
@@ -23,6 +23,11 @@
             Progresos p = new Progresos();
             String clienteid=String.valueOf(validar.getAttribute("id_persona"));
             p.setId_cliente(clienteid);
+         
+        if (validar.getAttribute("id_persona")==null || validar.getAttribute("id_persona").equals("0"))
+        {
+            response.sendRedirect("Login.jsp");
+        }
         //p.obtenerProgresos();
         %>
         <div class="contenedor">

@@ -19,7 +19,8 @@
     <header class="header">
       <% 
         HttpSession validar=request.getSession();
-        if (validar.getAttribute("id_persona")==null)
+        validar.getAttribute("id_persona");
+        if (validar.getAttribute("id_persona")==null || validar.getAttribute("id_persona").equals("0"))
         {
             response.sendRedirect("Login.jsp");
         }
@@ -29,12 +30,11 @@
         r.setId_entrenador(validar.getAttribute("id_persona").toString());
         r.setId_cliente(cod);
         r.verRutinasSocios();
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(r.getId_cliente());
+        
+        
         %>
         
-        <!--<h1><%=cod%></h1
-        <h1><%=validar.getAttribute("id_persona")%></h1>-->
+        
       <div class="contenedor">
         <h1 class="logo"><span class="icon-gym">GYM</span></h1>
         <span class="icon-menu" id="btn-menu"></span>

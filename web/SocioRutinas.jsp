@@ -18,7 +18,11 @@
     </head>
     <body id="loginBody">
         <%
-            HttpSession validar=request.getSession();
+          HttpSession validar=request.getSession();
+        if (validar.getAttribute("id_persona")==null || validar.getAttribute("id_persona").equals("0"))
+        {
+            response.sendRedirect("Login.jsp");
+        }
 
     Rutina r= new Rutina();
     String id_socio = validar.getAttribute("id_persona").toString();
