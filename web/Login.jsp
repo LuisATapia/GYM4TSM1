@@ -24,9 +24,10 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="index.jsp" class="menu__link">Inicio</a></li>
+              <li class="menu__item"><a href="index.jsp" class="menu__link ">Inicio</a></li>
               <li class="menu__item"><a href="Registrar.jsp" class="menu__link">Registrate</a></li>
               <li class="menu__item"><a href="Login.jsp" class="menu__link select">Inicia Sesi&oacute;n</a></li>
+              <li class="menu__item"><a href="Ubicacion.jsp" class="menu__link ">Ubicaci&oacute;n</a></li>
           </ul>
         </nav>
       </div>
@@ -60,3 +61,4 @@
    
     %>
 </html>
+
