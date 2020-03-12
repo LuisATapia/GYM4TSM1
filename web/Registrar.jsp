@@ -32,7 +32,7 @@
     <div class="banner">
      <!--<img src="gymBanner.jpg"alt="">-->
       <div class="contenedor">
-          <form id="reg" action="Registrar.jsp" method="post"  >
+          <form id="reg" action="Registrar.jsp" method="post" onsubmit="validarCaptcha(this)" >
           <h1>Registrate</h1>
           <input type="text" placeholder="Nombre" name="txtNombre" required minlength="3" maxlength="30" onkeypress="return soloLetras(event)"onpaste="return false"><br>
           <input type="text" placeholder="Apellidos" name="txtApellidos" required minlength="3" maxlength="30"  onkeypress="return soloLetras(event)" onpaste="return false"><br>
