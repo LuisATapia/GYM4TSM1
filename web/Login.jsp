@@ -40,25 +40,11 @@
           <input type="text" placeholder="Usuario" name="txtUsuarioLogin"><br>
           <input type="password" placeholder="Contraseña" name="txtPassLogin"><br>
           <input type="submit" value="Ingresar" id="btnIngresar">
-              <p><a href="Registrar.jsp">Registrate aqu&iacute;</a></p>
+          <p><a href="Registrar.jsp">Registrate aqu&iacute;</a></p>
       </form>
       </div>
     </div>
     <script src="js/script.js"></script>
   </body>
-<%  
-   /*Personas p=new Personas();
-    p.setCurp(request.getParameter("txtUsuario"));
-    p.setPasswd(request.getParameter("txtPass"));
-    p.validarUsuario();
-    if (p.getTipo_usuario()==1){
-        response.sendRedirect("indez.jsp");
-    }else if (p.getTipo_usuario()==0)
-    {
-        response.sendRedirect("Registrar.jsp");
-    }
-    System.out.println(p.getTipo_usuario()); */
-   
-    %>
 </html>
 

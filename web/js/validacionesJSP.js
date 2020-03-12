@@ -103,4 +103,15 @@ function valEmail(valor){
         return true;
     }
 }
-
+function validarCaptcha(a){
+    var response = grecaptcha.getResponse();
+    if (response.length==0)
+    {
+    alert('Por favor Compruebe el captcha');
+    return false;
+    event.preventDefault();
+    }else
+    {
+        return true;
+    }
+}
