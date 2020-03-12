@@ -70,11 +70,17 @@ public class Validaciones {
     }
     
 
+<<<<<<< HEAD
     
     public boolean soloL(String letras){
         boolean co;
         Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
 
+=======
+    public boolean soloL(String letras){
+        boolean co;
+Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
+>>>>>>> f49e9153905469276a56c4758a23b808dfbdd24a
      Matcher mat = pat.matcher(letras);
      if (mat.matches()) {
          System.out.println("SI");
@@ -83,6 +89,7 @@ public class Validaciones {
          System.out.println("NO");
          co = false;
      }
+        System.out.println(co);
      return co; 
     }
     
@@ -94,6 +101,6 @@ public class Validaciones {
         v.validarEmail("1kv.diaz.moreno.rogelio@hotmail.com");
         v.validarContraseña("Rogelio3011");
         v.letrasM("rogelio");
-        v.soloL("rogelio10");
+        v.soloL("rogelio");
     }
 }
