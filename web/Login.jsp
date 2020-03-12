@@ -37,7 +37,7 @@
       <div class="contenedor">
       <form action="Canal.jsp" method="post" >
           <h1>Inicia Sesi&oacute;n</h1>
-          <input type="text" placeholder="Usuario" name="txtUsuarioLogin"><br>
+          <input type="email" placeholder="Usuario" name="txtUsuarioLogin" ><br>
           <input type="password" placeholder="Contraseña" name="txtPassLogin"><br>
           <input type="submit" value="Ingresar" id="btnIngresar">
           <p><a href="Registrar.jsp">Registrate aqu&iacute;</a></p>
