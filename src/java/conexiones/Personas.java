@@ -155,7 +155,7 @@ public class Personas {
             if (record.next()==true)
             {
                 //JOptionPane.showMessageDialog(null,"El registro ya existe");
-                System.out.println("<script> alert('¡Alerta!')</script>");
+                System.out.println("Ya estás en la base");
             }else
             {
                 try {

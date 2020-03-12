@@ -38,12 +38,14 @@ public class Validaciones {
     
     public boolean validarContraseña (String correo){
         boolean rstcontra;
-        if(correo.isEmpty() || correo.length()<8 || correo.length()>12){
+        if(correo.isEmpty() || correo.length()<8 || correo.length()>20){
             rstcontra=false;
+            System.out.println("la contraseña es invalida");
         }else{
                 rstcontra=true;
+                System.out.println("la contraseña es valido");
                 }
-        System.out.println(rstcontra);
+        //System.out.println(rstcontra);
         return rstcontra; 
    }
     
@@ -69,18 +71,31 @@ public class Validaciones {
    
     }
     
-
-
-    public boolean soloL(String letras){
+    public boolean soloN(String letras){
         boolean co;
-Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
+        Pattern pat = Pattern.compile("[a-zA-Z]{3,25}");
 
-     Matcher mat = pat.matcher(letras);
+        Matcher mat = pat.matcher(letras);
+        if (mat.matches()) {
+             System.out.println("SI n");
+            co = true;
+     } else {
+         System.out.println("NO n");
+         co = false;
+     }
+        //System.out.println(co);
+     return co; 
+    }
+    public boolean soloP(String apellido){
+        boolean co;
+Pattern pat = Pattern.compile("[a-zA-Z]{3,25}");
+
+     Matcher mat = pat.matcher(apellido);
      if (mat.matches()) {
-         System.out.println("SI");
+         System.out.println("SI ap");
          co = true;
      } else {
-         System.out.println("NO");
+         System.out.println("NO ap");
          co = false;
      }
         System.out.println(co);
@@ -90,11 +105,26 @@ Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
     public static void main (String [] args)
     {
         Validaciones v = new Validaciones();
-        v.validarNombre("Rogelio");
+        /*v.validarNombre("Rogelio");
         v.validarApellidos("Diaz Moreno");
         v.validarEmail("1kv.diaz.moreno.rogelio@hotmail.com");
         v.validarContraseña("Rogelio3011");
         v.letrasM("rogelio");
-        v.soloL("rogelio");
+        v.soloN("rogelio");*/
+        System.out.println("----------------------------------");
+            String nombre="LuisAs";
+            String apellidos="Tapia";
+            String curp="angeltapia2a@gmail.com";
+            String exp="1 año";
+            String ob="...";
+            String clave="123";
+            String pass="Tapia123";
+        if (v.soloN(nombre)==true && v.soloP(apellidos) && v.validarEmail(curp)==true && v.validarContraseña(pass)==true)
+        {
+            System.out.println("Si funciona D:");
+        }else
+        {
+            
+        }
     }
 }
