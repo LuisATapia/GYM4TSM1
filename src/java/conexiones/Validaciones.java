@@ -82,6 +82,7 @@ Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
          System.out.println("NO");
          co = false;
      }
+        System.out.println(co);
      return co; 
     }
     
@@ -93,6 +94,6 @@ Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
         v.validarEmail("1kv.diaz.moreno.rogelio@hotmail.com");
         v.validarContraseña("Rogelio3011");
         v.letrasM("rogelio");
-        v.soloL("rogelio10");
+        v.soloL("rogelio");
     }
 }
