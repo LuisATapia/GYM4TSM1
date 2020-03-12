@@ -47,8 +47,6 @@ public class Validaciones {
         return rstcontra; 
    }
     
-    
-    
     public boolean validarEmail(String email) {
         boolean co;
         Pattern pattern = Pattern
@@ -71,9 +69,14 @@ public class Validaciones {
    
     }
     
+<<<<<<< HEAD
+    public void soloL(String letras){
+    Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
+=======
     public boolean soloL(String letras){
         boolean co;
 Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
+>>>>>>> bff0830fcfb39a9e9ed7d0641c559ed8a3aa079a
      Matcher mat = pat.matcher(letras);
      if (mat.matches()) {
          System.out.println("SI");

@@ -2,18 +2,18 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
         <file>
-            <url>web/EntrenadorRutinas.jsp</url>
-            <bookmark id="1">
-                <name/>
-                <line>77</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
             <url>src/java/conexiones/Validaciones.java</url>
             <bookmark id="2">
                 <name/>
                 <line>19</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>web/EntrenadorRutinas.jsp</url>
+            <bookmark id="1">
+                <name/>
+                <line>77</line>
                 <key/>
             </bookmark>
         </file>
