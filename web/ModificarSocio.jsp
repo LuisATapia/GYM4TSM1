@@ -4,6 +4,7 @@
     Author     : ROGELIO
 --%>
 
+<%@page import="conexiones.Validaciones"%>
 <%@page import="conexiones.Personas"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -60,12 +61,17 @@
           <input type="submit" value="Guardar cambios" id="btnRegistrar" name="ModificarPersona">
       </form>
           <%
+              Validaciones v=new Validaciones();
               if(request.getParameter("ModificarPersona")!=null){
               String nuevoNombre=request.getParameter("txtNuevoNombre");
                 String nuevoApellido=request.getParameter("txtNuevoApellido");
                 String nuevaObser=request.getParameter("txtNuevaObser");
                 String nuevaPass=request.getParameter("txtNuevaPass");
-               
+               String ConfirmarNuevaPass=request.getParameter("txtNuevaPass");
+                
+                 if (v.soloN(nuevoNombre)==true && v.soloP(nuevoApellido) && v.validarContraseña(nuevaPass)==true){
+               if (ConfirmarNuevaPass.equals(nuevaPass))
+               {
                 p.setNombre(nuevoNombre);
                 p.setApellidos(nuevoApellido);
                 p.setObservaciones(nuevaObser);
@@ -73,10 +79,20 @@
                 p.setId_persona(id_people);
                 p.modificarPersona();
                 response.sendRedirect("ModificarSocio.jsp");
-              }
+             }else
+               {
+                   %><script>swal("Error","Las contraseñas no coinciden","error");</script><%
+               }
+            
+                }else{
+            %><script>swal("Error","Revise los campos","error");</script><%
+            }
+            
+        }
           %>
       </div>
     </div>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
         <%
         if(request.getParameter("btnCerrar")!=null){

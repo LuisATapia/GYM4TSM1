@@ -60,6 +60,7 @@
       </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
     <%
         Validaciones v= new Validaciones();
@@ -89,11 +90,11 @@
             person.registrarPersona();
                }else
                {
-                   %><script>alert('Las contraseñas no coinciden')</script><%
+                   %><script>swal("Error","Las contraseñas no coinciden","error");</script><%
                }
             
                 }else{
-            %><script>alert('Hubo un error, Revise los campos')</script><%
+            %><script>swal("Error","Revise los campos","error");</script><%
             }
             
         }
