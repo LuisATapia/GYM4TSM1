@@ -51,28 +51,8 @@
           Peso Actual:<input type="text"  name="txtPeso">Kg.
           <input type="submit" value="Registrar" id="btnIngresar" name="guardarProgreso">
       </form>
-          <input onclick="mostrarElementos1();" id="btnRutinas" value="MOSTRAR PROGRESO">
-      </div>
-     <div class="contenedor">
-          <table id="tablaProgreso">
-              <tr>
-                  <th>Fecha:</th>
-                  <th>Peso:</th>
-                  <th>Estatura:</th>
-              </tr>
-              <%
-                  for(Progresos p : pos.obtenerProgresos()){
-                      System.out.println(p.getFecha_captura()+p.getPeso()+p.getAltura());
-                  %>
-              <tr>
-                  <td><%=p.getFecha_captura()%></td>
-                  <td><%=p.getPeso()%></td>
-                  <td><%=p.getAltura()%></td>
-              </tr>
-                  <%
-                      }
-                    %>
-          </table>
+          <!--<input onclick="mostrarElementos1" id="btnRutinas" value="MOSTRAR PROGRESO">-->
+          <a href="TablaProgreso.jsp" id="btnRutinas" target="_blank">MOSTRAR PROGESO</a>
       </div>
     </div>
     <script src="js/script.js"></script>
