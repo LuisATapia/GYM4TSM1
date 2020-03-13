@@ -77,10 +77,10 @@ public class Validaciones {
 
         Matcher mat = pat.matcher(letras);
         if (mat.matches()) {
-             System.out.println("SI n");
+             System.out.println("SI nombre");
             co = true;
      } else {
-         System.out.println("NO n");
+         System.out.println("NO nombre");
          co = false;
      }
     
