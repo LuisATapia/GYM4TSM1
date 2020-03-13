@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosPago.css">
        <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
+           <link href="css/estilosCerrarSesion.css" type="text/css" rel="stylesheet">
     <title>Registrar Pagos</title>
     </head>
     <body id="loginBody">
@@ -34,7 +35,7 @@
               <li class="menu__item"><a href="ModificarPersona.jsp" class="menu__link ">Mi perfil</a></li>
               <li class="menu__item"><a href="EntrenadorRutinas.jsp" class="menu__link">Ver socios</a></li>
               <li class="menu__item"><a href="RegistrarPago.jsp" class="menu__link select">Registrar pago</a></li>
-              <li class="menu__item"><form><input type="submit" value="Cerrar Sesion" class="menu__link" name="btnCerrar"/></form></li>
+              <li class="menu__item"><form id="btnSesion"><input type="submit" value="Cerrar Sesion" class="menu__link" name="btnCerrar"/></form></li>
           </ul>
         </nav>
       </div>

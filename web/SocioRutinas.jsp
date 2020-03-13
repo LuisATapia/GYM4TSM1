@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosSocio.css">
        <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
+           <link href="css/estilosCerrarSesion.css" type="text/css" rel="stylesheet">
     <title>Rutinas de la Semana</title>
     </head>
     <body id="loginBody">
@@ -38,7 +39,7 @@
             <li class="menu__item"><a href="ModificarSocio.jsp" class="menu__link">Mi perfil</a></li>        
             <li class="menu__item"><a href="SocioRutinas.jsp" class="menu__link select">Ver Rutinas</a></li>
             <li class="menu__item"><a href="RegistrarProgreso.jsp" class="menu__link">Mi Progreso</a></li>
-            <li class="menu__item"><form><input type="submit" value="Cerrar Sesion" class="menu__link" name="btnCerrar"/></form></li>
+            <li class="menu__item"><form id="btnSesion"><input type="submit" value="Cerrar Sesion" class="menu__link" name="btnCerrar"/></form></li>
           </ul>
         </nav>
       </div>
