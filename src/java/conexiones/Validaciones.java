@@ -70,17 +70,9 @@ public class Validaciones {
     }
     
 
-<<<<<<< HEAD
-    
     public boolean soloL(String letras){
         boolean co;
-        Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
-
-=======
-    public boolean soloL(String letras){
-        boolean co;
-Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
->>>>>>> f49e9153905469276a56c4758a23b808dfbdd24a
+    Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
      Matcher mat = pat.matcher(letras);
      if (mat.matches()) {
          System.out.println("SI");
