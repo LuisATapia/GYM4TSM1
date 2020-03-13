@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/estilos.css">
    <link rel="stylesheet" href="css/estilosProgreso.css">
        <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
+           <link href="css/estilosCerrarSesion.css" type="text/css" rel="stylesheet">
     <title>Registrar Progreso</title>
     </head>
     <body id="loginBody">
@@ -34,7 +35,7 @@
             <li class="menu__item"><a href="ModificarSocio.jsp" class="menu__link">Mi perfil</a></li>        
             <li class="menu__item"><a href="SocioRutinas.jsp" class="menu__link ">Ver Rutinas</a></li>
             <li class="menu__item"><a href="RegistrarProgreso.jsp" class="menu__link select">Mi Progreso</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" onclick="cerrarVentana();">Cerrar Sesi&oacute;n</a></li>
+            <li class="menu__item"><form id="btnSesion"><input type="submit" value="Cerrar Sesion" class="menu__link" name="btnCerrar"/></form></li>
           </ul>
         </nav>
       </div>
@@ -87,6 +88,13 @@
             pos.setPeso(pes);
             pos.registrarProgreso();
             
+        }
+    %>
+        <%
+        if(request.getParameter("btnCerrar")!=null){
+            validar.invalidate();
+            //validar.removeAttribute("id_persona");
+            response.sendRedirect("Login.jsp");
         }
     %>
 </html>

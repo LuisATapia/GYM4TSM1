@@ -34,7 +34,7 @@
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
             <li class="menu__item"><a href="#" class="menu__link"></a></li>
-            <li class="menu__item"><a href="#" class="menu__link select" onclick="cerrarVentana();">Cerrar Sesi&oacute;n</a></li>
+            <li class="menu__item"><form><input type="submit" value="Cerrar Sesion" class="menu__link select" name="btnCerrar"/></form></li>
           </ul>
         </nav>
       </div>
@@ -51,12 +51,12 @@
       </div>
     </div>
     <script src="js/script.js"></script>
-    
-    <script>
-        function cerrarVentana(){
-            window.open('Login.jsp');
-        window.close();
-    }
-    </script>
+    <%
+        if(request.getParameter("btnCerrar")!=null){
+            validar.invalidate();
+            //validar.removeAttribute("id_persona");
+            response.sendRedirect("Login.jsp");
+        }
+    %>
     </body>
 </html>

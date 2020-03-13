@@ -10,8 +10,8 @@
        <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilosRegistro.css">
     <title>Pagina</title>
-     <script languague="javascript" type="text/javascript" src="js/validacionesJSP.js" </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script language="javascript" type="text/javascript" src="js/validacionesJSP.js" ></script>
+    <script  src='https://www.google.com/recaptcha/api.js'></script>
     <title>Registrate</title>
     </head>
     <body id="loginBody">
@@ -48,13 +48,13 @@
                   <option>Más de un año</option>
               </select><br>         
           <textarea placeholder="Observaciones" name="txtObser" minlength="2" maxlength="100"  onpaste="return false" required  ></textarea><br>
-          <input type="password" placeholder="Contraseña" minlength="10" maxlength="20" required onpaste="return false"><br>
-          <input type="password" placeholder="Confirmar contraseña" name="txtPass" minlength="10" maxlength="20" required onpaste="return false"><br>
+          <input type="password" placeholder="Contraseña" name="txtP" minlength="10" maxlength="20" required onpaste="return false"><br>
+          <input type="password" placeholder="Confirmar contraseña" name="txtPass" minlength="8" maxlength="20" required onpaste="return false" ><br>
           <label for="chec">Entrenador:</label>
           <input type="checkbox" name="chec" id="chec" onchange="Cambiar();">
           <input type="text" placeholder="Palabra clave" id="btn" readonly name="txtClave">
           <div class="g-recaptcha" data-sitekey="6LdqFuAUAAAAAHdwBnYK5FpnCEp7PnwuPY-A4kFa"></div>
-          <input type="submit" value="Registrar" id="btnRegistrar">
+          <input type="submit" value="Registrar" id="btnRegistrar" name="btnReg">
               <p><a href="Login.jsp">Inicia sesi&oacute;n aqu&iacute;</a></p>
       </form>
       </div>
@@ -65,18 +65,20 @@
         Validaciones v= new Validaciones();
         if (request.getParameter("btnReg")!=null)
         {
-            if (v.validarNombre(request.getParameter("txtNombre"))==true)
-            {
-                                
-        String nombre=request.getParameter("txtNombre");
+            String nombre=request.getParameter("txtNombre");
             String apellidos=request.getParameter("txtApellidos");
             String curp=request.getParameter("txtCurp");
             String exp=request.getParameter("txtExpe");
             String ob=request.getParameter("txtObser");
             String clave=request.getParameter("txtClave");
             String pass=request.getParameter("txtPass");
+            String ps=request.getParameter("txtP");
             
             Personas person=new Personas();
+            System.out.println("Vas bien");
+            if (v.soloN(nombre)==true && v.soloP(apellidos) && v.validarEmail(curp)==true && v.validarContraseña(pass)==true){
+               if (ps.equals(pass))
+               {
             person.setNombre(nombre);
             person.setApellidos(apellidos);
             person.setCurp(curp);
@@ -84,8 +86,16 @@
             person.setObservaciones(ob);
             person.setPalabra_clave(clave);
             person.setPasswd(pass);
-            person.registrarPersona();                       
-                }
+            person.registrarPersona();
+               }else
+               {
+                   %><script>alert('Las contraseñas no coinciden')</script><%
+               }
+            
+                }else{
+            %><script>alert('Hubo un error, Revise los campos')</script><%
             }
+            
+        }
             %>
 </html>
