@@ -61,16 +61,31 @@ textarea{
     background-color: #FBA919;
     color: white;
 }
-form,table{
+form{
     padding: 10px;
-    margin-top: 20%;;
+    margin-top: 5%;;
     border:10px solid #FBA919;
     color: white;
     background-color: rgba(0,0,0,0.6);
     font-size: 20px;
 }
+table{
+    margin: auto;
+    margin-top: 20%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border:5px solid #FBA919;
+    border-radius: 5px;
+}
+th{
+    font-size: 30px;
+}
+#buscar{
+   width: 100vh;
+}
 th,td{
     border-style:double;
+    padding: 5px;
 }
 input{
     font-size: 20px;

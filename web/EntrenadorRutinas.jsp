@@ -57,15 +57,19 @@
      <div class="contenedor" id="dias1">
       <h2 class="section__titulo">Lista de usuarios</h2>
       <section class="info">
-        <form>
+        <!--<form>
            <h2>Buscar socios</h2>
             <input type="text" placeholder="Folio del socio" name="txtBuscarSocio">
             <input type="submit" value="buscar" id="btn">
-        </form>
-         <table>
+        </form>-->
+         <table id="tabla" class="table table-striped">
+             <thead>
             <tr>
                 <th colspan="6">SOCIOS</th>
             </tr>
+                              <tr>
+                 <td colspan="6"><input id="buscar" type="text" class="form-control" placeholder="Escribe un caracter" /></td>
+             </tr>
              <tr>
                  <td>Folio</td>
                  <td>Nombre</td>
@@ -74,6 +78,9 @@
                  <td>Observaciones</td>
                  <td>Acciones</td>
              </tr>
+
+             </thead>
+             <tbody>
              <%
                  //Personas p = Personas new
                  for (Personas p : new Personas().obtenerPersonas())
@@ -91,6 +98,7 @@
              <%
                  }
              %>
+             </tbody>
          </table>
         </section>
     </div>
@@ -98,7 +106,7 @@
       id="dias">
           <form class="days" method="post" action="EntrenadorRutinas.jsp">
       <h2 class="section__titulo">Rutinas diarias</h2>
-      <input type="text" placeholder="Ingrese el folio del socio" name="txtSocio">
+      <input type="text" placeholder="Folio del socio" name="txtSocio">
       <section class="info">
           <article class="info__columna">
            <h2 class="info__titulo">Lunes</h2>
@@ -131,6 +139,7 @@
         </form>
     </div>    
     <script src="js/script.js"></script>
+    <script src="js/BusquedaTablaFiltro.js"></script>
   </body>
        <%
            if(request.getParameter("registrarRutina")!=null){
