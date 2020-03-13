@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
        <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
@@ -10,8 +11,14 @@
        <link href="css/fontello.css" rel="stylesheet"> 
    <link rel="stylesheet" href="css/estilosRegistro.css">
     <title>Pagina</title>
+
+    <script languague="javascript" type="text/javascript" src="js/validacionesJSP.js" </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+
     <script language="javascript" type="text/javascript" src="js/validacionesJSP.js" ></script>
     <script  src='https://www.google.com/recaptcha/api.js'></script>
+
     <title>Registrate</title>
     </head>
     <body id="loginBody">
@@ -32,7 +39,11 @@
     <div class="banner">
      <!--<img src="gymBanner.jpg"alt="">-->
       <div class="contenedor">
+  
+          <form id="reg" action="Registrar.jsp" method="post" onsubmit=" return validacionesJSP()">
+
           <form id="reg" action="Registrar.jsp" method="post" onsubmit="validarCaptcha(this)" >
+
           <h1>Registrate</h1>
           <input type="text" placeholder="Nombre" name="txtNombre" required minlength="3" maxlength="30" onkeypress="return soloLetras(event)"onpaste="return false"><br>
           <input type="text" placeholder="Apellidos" name="txtApellidos" required minlength="3" maxlength="30"  onkeypress="return soloLetras(event)" onpaste="return false"><br>
@@ -48,8 +59,13 @@
                   <option>Más de un año</option>
               </select><br>         
           <textarea placeholder="Observaciones" name="txtObser" minlength="2" maxlength="100"  onpaste="return false" required  ></textarea><br>
+
+          <input type="password" placeholder="Contraseña" minlength="10" maxlength="20" required onpaste="return false"><br>
+          <input type="password" placeholder="Confirmar contraseña" name="txtPass" minlength="10" maxlength="20" required onpaste="return false"><br>
+
           <input type="password" placeholder="Contraseña" name="txtP" minlength="10" maxlength="20" required onpaste="return false"><br>
           <input type="password" placeholder="Confirmar contraseña" name="txtPass" minlength="8" maxlength="20" required onpaste="return false" ><br>
+
           <label for="chec">Entrenador:</label>
           <input type="checkbox" name="chec" id="chec" onchange="Cambiar();">
           <input type="text" placeholder="Palabra clave" id="btn" readonly name="txtClave">

@@ -103,6 +103,7 @@ function valEmail(valor){
         return true;
     }
 }
+
 function validarCaptcha(a){
     var response = grecaptcha.getResponse();
     if (response.length==0)
@@ -115,3 +116,45 @@ function validarCaptcha(a){
         return true;
     }
 }
+
+
+//Función para comprobar que el campo nombre no está vacío.
+function comprobarNombre(){
+    if (!document.getElementById("nombre").value==""){
+        var nombre = document.getElementById('nombre').value;
+        //console.log(nombre);
+    }else{
+        document.getElementById("errores").innerHTML="El campo NOMBRE es obligatorio.";
+        document.getElementById("nombre").focus();
+        return false;
+    }
+}
+//validacion este elimina los espacio en los extremos del string.
+function validar(e) {
+ if (e.target.value.trim() == "")
+  alert("debe ingresar un valor en el campo");
+ else
+  alert("ingreso "+e.target.value.trim()+", es correcto!");
+}
+
+
+//espaciado
+
+function controlEspacio()
+{
+
+var evento_key = window.event.keyCode;
+if (evento_key == '32' ) //comparo tecla space
+
+alert('Error, no puede usar un espacio en este lugar')
+
+}
+
+//enter
+$(document).ready(function() {
+    $("form").keypress(function(e) {
+        if (e.which == 13) {
+            return  false;
+        }
+    });
+});

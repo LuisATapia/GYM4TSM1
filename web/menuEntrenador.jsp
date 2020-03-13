@@ -1,9 +1,3 @@
-<%-- 
-    Document   : menuEntrenador
-    Created on : 4/02/2020, 10:26:05 AM
-    Author     : ROGELIO
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
