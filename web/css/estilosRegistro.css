@@ -6,9 +6,9 @@
 
 form{
     margin: auto;
-    margin-top: 60%;
-    margin-bottom: 3%;
-    padding: 15px;
+    margin-top: 80px;
+    margin-bottom: 2%;
+    padding: 10px;
     background-color:rgba(0,0,0,0.5);
     font-size: 22px;
     width: 50vh;
@@ -19,8 +19,8 @@ form{
 input, textarea, select{
     border: 0;
     padding: 5px;
-    margin: 10px;
-    font-size: 18px;
+    margin: 8px;
+    font-size: 15px;
     border-radius: 8px;;
     text-transform: uppercase; /*transforma mayusculas Validacion Ana*/            
 
