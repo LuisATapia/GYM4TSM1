@@ -45,6 +45,8 @@
       </div>
     </div>
     <script src="js/script.js"></script>
+        <script src="jquery.min.js"></script>
+    <script src="js/DisabledMetaComands.js"></script>
   </body>
 </html>
 
