@@ -61,6 +61,8 @@
     </div>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="js/DisabledMetaComands.js"></script>
   </body>
     <%
         Validaciones v= new Validaciones();
@@ -86,7 +88,7 @@
             person.setExperiencia(exp);
             person.setObservaciones(ob);
             person.setPalabra_clave(clave);
-            person.setPasswd(pass);
+            person.setPasswd(pass); 
             person.registrarPersona();
                }else
                {
