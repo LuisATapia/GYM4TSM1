@@ -1,9 +1,3 @@
-<%-- 
-    Document   : ModificarPersona
-    Created on : 3/02/2020, 04:15:35 AM
-    Author     : LuisAngel
---%>
-
 <%@page import="conexiones.Validaciones"%>
 <%@page import="conexiones.Personas"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -40,10 +40,7 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-              <li class="menu__item"><a href="ModificarPersona.jsp"  class="menu__link ">Mi perfil</a></li>
-              <li class="menu__item"><a href="EntrenadorRutinas.jsp"  class="menu__link">Ver socios</a></li>
-              <li class="menu__item"><a href="RegistrarPago.jsp"  class="menu__link">Registrar pago</a></li>
-              <li class="menu__item"><a href="#" class="menu__link" onclick="cerrarVentana();">Cerrar Sesi&oacute;n</a></li>
+              <li class="menu__item"><a href="EntrenadorRutinas.jsp"  class="menu__link select">Volver</a></li>
           </ul>
         </nav>
       </div>
