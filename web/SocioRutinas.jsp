@@ -16,6 +16,7 @@
        <link href="img/pesas-icon.jpg" type="image/x-icon" rel="shortcut icon">
            <link href="css/estilosCerrarSesion.css" type="text/css" rel="stylesheet">
     <title>Rutinas de la Semana</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
     </head>
     <body id="loginBody">
         <%
@@ -53,7 +54,7 @@
            <h2 class="info__titulo">Lunes</h2>
            <textarea name="areaLunes" class="info__img" disabled><%=r.getLunes()%></textarea>
            <a href="#" class="lunes">Escuchar</a>
-        <audio src="" hidden class="speech"></audio><br>
+            <audio src="" hidden class="speech"></audio><br>
           </article>
 
           <article class="info__columna">
@@ -93,6 +94,7 @@
                 </form>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/speech.js"></script>
   </body>
        <%
        if (request.getParameter("btnRealizado")!=null)
