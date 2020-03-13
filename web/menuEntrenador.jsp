@@ -51,6 +51,8 @@
       </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>swal ("Bienvenido","    ","success",{buttons: false, timer: 3000,});</script>
     <%
         if(request.getParameter("btnCerrar")!=null){
             validar.invalidate();
