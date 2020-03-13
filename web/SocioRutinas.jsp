@@ -51,30 +51,42 @@
       <section class="info">
           <article class="info__columna">
            <h2 class="info__titulo">Lunes</h2>
-           <textarea name="" class="info__img" disabled><%=r.getLunes()%></textarea>
+           <textarea name="areaLunes" class="info__img" disabled><%=r.getLunes()%></textarea>
+           <a href="#" class="lunes">Escuchar</a>
+        <audio src="" hidden class="speech"></audio><br>
           </article>
 
           <article class="info__columna">
            <h2 class="info__titulo">Martes</h2>
-            <textarea name="" class="info__img" disabled><%=r.getMartes()%></textarea>
+            <textarea name="areaMartes" class="info__img" disabled><%=r.getMartes()%></textarea>
+            <a href="#" class="martes">Escuchar</a>
+        <audio src="" hidden class="speech"></audio><br>
           </article>
           <article class="info__columna">
               <h2 class="info__titulo">Mi&eacute;rcoles</h2>
-            <textarea name="" class="info__img" disabled><%=r.getMiercoles()%></textarea>
+            <textarea name="areaMiercoles" class="info__img" disabled><%=r.getMiercoles()%></textarea>
+            <a href="#" class="miercoles">Escuchar</a>
+        <audio src="" hidden class="speech"></audio><br>
           </article>
                </section>
           <section class="info">
           <article class="info__columna">
            <h2 class="info__titulo">Jueves</h2>
-            <textarea name="" class="info__img" disabled><%=r.getJueves()%></textarea>
+            <textarea name="areaJueves" class="info__img" disabled><%=r.getJueves()%></textarea>
+            <a href="#" class="jueves">Escuchar</a>
+        <audio src="" hidden class="speech"></audio><br>
           </article>
           <article class="info__columna">
            <h2 class="info__titulo">Viernes</h2>
-            <textarea name="" class="info__img" disabled><%=r.getViernes()%></textarea>
+            <textarea name="areaViernes" class="info__img" disabled><%=r.getViernes()%></textarea>
+            <a href="#" class="viernes">Escuchar</a>
+        <audio src="" hidden class="speech"></audio><br>
           </article>
           <article class="info__columna">
            <h2 class="info__titulo">Sábado</h2>
-            <textarea name="" class="info__img" disabled><%=r.getSabado()%></textarea>
+            <textarea name="areaSabado" class="info__img" disabled><%=r.getSabado()%></textarea>
+            <a href="#" class="sabado">Escuchar</a>
+        <audio src="" hidden class="speech"></audio><br>
           </article>
         </section>
             <input type="submit" id="btn" value="¡Rutina Realizada!" name="btnRealizado">
