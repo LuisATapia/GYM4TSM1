@@ -71,13 +71,6 @@ public class Validaciones {
    
     }
     
-<<<<<<< HEAD
-
-    public boolean soloL(String letras){
-        boolean co;
-    Pattern pat = Pattern.compile("[a-zA-Z]{5,10}");
-     Matcher mat = pat.matcher(letras);
-=======
     public boolean soloN(String letras){
         boolean co;
         Pattern pat = Pattern.compile("[a-zA-Z]{3,25}");
@@ -90,7 +83,7 @@ public class Validaciones {
          System.out.println("NO n");
          co = false;
      }
-        //System.out.println(co);
+    
      return co; 
     }
     public boolean soloP(String apellido){
@@ -98,7 +91,6 @@ public class Validaciones {
 Pattern pat = Pattern.compile("[a-zA-Z]{3,25}");
 
      Matcher mat = pat.matcher(apellido);
->>>>>>> 0b59be19ef6440401fbccf40a939b227da9f76db
      if (mat.matches()) {
          System.out.println("SI ap");
          co = true;
