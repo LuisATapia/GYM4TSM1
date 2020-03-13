@@ -62,6 +62,7 @@ input{
     text-decoration: underline;
     border: 2px solid white;
     cursor: pointer;
+    
 }
 
 @media(min-width:480px) {
@@ -79,11 +80,9 @@ table{
     text-align: center;
     border: 3px solid #FBA919;
     margin: auto;
-    transform: translateY(800%);
     background-color: white;
     color: black;
     margin-bottom: 40px;
-    display: none;
 }
 th,td{
     border-style:ridge;
