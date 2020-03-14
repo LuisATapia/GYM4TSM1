@@ -87,7 +87,9 @@ public class Rutina {
     public void setDomingo(String domingo) {
         this.domingo = domingo;
     }
-    
+    /**
+     * Metodo que agrega una rutina
+     */
     public void registrarRutina()
     {
         try {

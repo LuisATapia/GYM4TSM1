@@ -29,6 +29,7 @@
     Rutina r= new Rutina();
     String id_socio = validar.getAttribute("id_persona").toString();
     r.setId_cliente(id_socio);
+    
     r.verRutinasSocios();
     %>
     <header class="header">
